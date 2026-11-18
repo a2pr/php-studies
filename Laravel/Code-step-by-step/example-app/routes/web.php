@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,3 +23,8 @@ Route::get('/contact', function () {
 #Route::view('/welcome', 'welcome');
 
 Route::redirect('/welcome', '/');
+
+Route::get('user', [UserController::class, 'index']);
+Route::get('get-user', [UserController::class, 'getUser']);
+Route::get('user-details/{name}', [UserController::class, 'details']);
+Route::get('welcome-user', [UserController::class, 'welcome']);

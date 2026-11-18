@@ -46,3 +46,7 @@ for every route a corresponging resource file should be created so we can displa
 view function does not need extension only file path
 Passing params in route is the second param for view method, an eay key added in the array will be consider a variable in blade template
 Route class contains a lot of methods to use for routing, get/post/view/put/delete/options/match/any/redirect
+
+## Controlers
+
+two tipes Basic controllers and Resource Controller CRUD
