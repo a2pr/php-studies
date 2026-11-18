@@ -55,3 +55,6 @@ two tipes Basic controllers and Resource Controller CRUD
 
 Faster than normal php and have a simpler syntax.
 withouth the extension balde, the blade sintax is not gonna show
+
+## SubViews
+

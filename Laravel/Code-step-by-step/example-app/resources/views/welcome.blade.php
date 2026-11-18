@@ -1,3 +1,5 @@
+
+@include('common.header')
 Hello laravel
 <a href="/about">about</a>
 <a href="/contact">contact</a>
@@ -7,3 +9,4 @@ Hello laravel
 <a href="{{route('contact')}}">contact</a>
 <a href="{{route('contact', ['user'=> 'andres'])}}">contact andres</a>
 --}}
+@include('common.inner', ['name'=> 'student'])
