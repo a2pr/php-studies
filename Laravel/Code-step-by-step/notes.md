@@ -50,3 +50,8 @@ Route class contains a lot of methods to use for routing, get/post/view/put/dele
 ## Controlers
 
 two tipes Basic controllers and Resource Controller CRUD
+
+## Blade templates
+
+Faster than normal php and have a simpler syntax.
+withouth the extension balde, the blade sintax is not gonna show
