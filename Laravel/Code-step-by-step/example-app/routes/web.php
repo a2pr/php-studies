@@ -42,3 +42,9 @@ Route::view('register', 'signup');
 });*/
 
 Route::get('login', [\App\Http\Controllers\AuthController::class, 'login']);
+
+Route::prefix('student')->group(function () {
+   Route::view('register', 'student.register');
+   Route::view('/', 'home');
+   Route::get('show', [HomeController::class, 'show']);
+});
