@@ -1,7 +1,14 @@
+<html>
+<head>
+    @vite(['resources/css/app.css', 'resources/css/custom.css'])
+    @vite(['resources/js/app.js'])
+
+</head>
+<body>
 
 @include('common.header')
 Hello laravel
-<a href="/about">about</a>
+<a class="green-heading" href="/about">about</a>
 <a href="/contact">contact</a>
 <a href="/about/andres">about andres</a>
 {{--
@@ -10,3 +17,5 @@ Hello laravel
 <a href="{{route('contact', ['user'=> 'andres'])}}">contact andres</a>
 --}}
 @include('common.inner', ['name'=> 'student'])
+</body>
+</html>

@@ -3,6 +3,6 @@
         <!-- No surplus words or unnecessary actions. - Marcus Aurelius -->
         Here is inner
         <br/>
-        {{$name}}
+        {{$name ?? ''}}
     </h3>
 </div>
