@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -8,7 +9,9 @@ Route::get('/', function () {
 });
 Route::get('/home', function () {
     return view('home');
-});
+})->name('home');
+Route::get('show', [HomeController::class, 'show'])->name('home.show');
+
 Route::get('/about', function () {
     return view('about');
 });
@@ -26,7 +29,7 @@ Route::redirect('/welcome', '/');
 
 Route::get('user', [UserController::class, 'index']);
 Route::get('get-user', [UserController::class, 'getUser']);
-Route::get('user-details/{name}', [UserController::class, 'details']);
+Route::get('user-details/{name}', [UserController::class, 'details'])->name('user.details');
 Route::get('welcome-user', [UserController::class, 'welcome']);
 
 $type = 'admin';
